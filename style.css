@@ -27,6 +27,30 @@ a {
 .flex {
     display: flex;
 }
+
+/* Images Heights */
+.img-h-50 {
+    height: 50px;
+}
+.img-h-30 {
+    height: 30px;
+}
+.img-h-20 {
+    height: 20px;
+}
+
+/* Padding */
+.p-10 {
+    padding: 10px 0;
+}
+
+/* Margin */
+.m-20-b {
+    margin-bottom: 20px;
+}
+
+
+/* Buttons */
 .white-btn {
     color: white;
     border: 1px solid white;
@@ -46,6 +70,12 @@ a {
     .s, .mg, .lg {
         display: none;
     }
+    .sidebar-container {
+        align-items: center;
+    }
+    .upper-sidebar, .lower-sidebar {
+        align-items: center;
+    }
 }
 
 
@@ -64,8 +94,13 @@ a {
     .s, .mg, .lg {
         display: inline;
     }
+    .sidebar-container {
+        align-items: flex-start;
+    }
+    .upper-sidebar, .lower-sidebar {
+        align-items: flex-start;
+    }
 }
-
 
 /** MD Layout */
 
@@ -125,20 +160,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    
 }
 .upper-sidebar, .lower-sidebar {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
 }
-.upper-sidebar > img {
-    height: 30px;
-}
-.lower-sidebar > img {
-    height: 30px;
-}
+
 
 
 /** Footer Section */
