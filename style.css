@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    padding-bottom: 100px;
+    padding: 100px 0 100px 100px;
     background-color: var(--blue)
 }
 
@@ -14,36 +14,50 @@ body {
 
 :root {
     --grey: #282828;
-    --blue: #151923;
+    --blue: #141922;
     --green: #ADFF30;
 }
 
 
 /** UTILS */
 
+a {
+    text-decoration: none;
+}
+.white-btn {
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 10px 30px;
 
-
+}
 /** XS Layout */
 
-@media screen and (max-width:576px) {
+@media screen and (min-width:576px) {
     .container {
         width: 540px;
+    }
+    #sidebar {
+        width: 60px;
     }
 }
 
 
 /** S Layout  */
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:768px) {
     .container {
         width: 720px;
+    }
+    #sidebar {
+        width: 100px;
     }
 }
 
 
 /** MD Layout */
 
-@media screen and (max-width:992px) {
+@media screen and (min-width:992px) {
     .container {
         width: 960px;
     }
@@ -52,7 +66,7 @@ body {
 
 /** LG Layout */
 
-@media screen and (max-width:1200px) {
+@media screen and (min-width:1200px) {
     .container {
         width: 1140px;
     }
@@ -69,8 +83,12 @@ header {
     left: 60px;
     right: 0;
     height: 40px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 40px 10px;
 
 }
 
@@ -82,7 +100,7 @@ header {
     top: 0;
     left: 0;
     bottom: 40px;
-    width: 60px;
+   
     background-color: black;
     color: white;
     overflow-y: auto;
