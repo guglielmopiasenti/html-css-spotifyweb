@@ -6,6 +6,8 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
+    padding-bottom: 100px;
+    background-color: var(--blue)
 }
 
 /** Custom Properties */
@@ -54,4 +56,50 @@ body {
     .container {
         width: 1140px;
     }
+}
+
+
+/** Main CSS */
+
+/** Header Section */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 60px;
+    right: 0;
+    height: 40px;
+    background-color: black;
+    color: white;
+
+}
+
+
+/** Sidebar Section */
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 40px;
+    width: 60px;
+    background-color: black;
+    color: white;
+    overflow-y: auto;
+}
+
+
+
+
+/** Footer Section */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--grey);
+    color: white;
+    height: 40px;
+    padding: 20px 0;
 }
