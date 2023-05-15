@@ -6,7 +6,7 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    padding: 100px 0 100px 100px;
+    padding: 100px 0 100px 60px;
     background-color: var(--blue)
 }
 
@@ -88,6 +88,9 @@ a {
     .install, .divider, .name {
         display: none;
     }
+    .col {
+        width: calc(100% / 2);
+    }
 
 }
 
@@ -149,6 +152,9 @@ a {
         flex-direction: row;
         gap: 10px;
     }
+    .col {
+        width: calc(100% / 4);
+    }
 }
 
 
@@ -157,6 +163,9 @@ a {
 @media screen and (min-width:1200px) {
     .container {
         width: 1140px;
+    }
+    .col {
+        width: calc(100% / 6);
     }
 }
 
@@ -223,6 +232,13 @@ header {
 }
 .name {
     font-weight: bold;
+}
+
+/** Content */
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
