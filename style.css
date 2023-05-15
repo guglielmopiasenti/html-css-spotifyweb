@@ -61,6 +61,12 @@ a {
     padding: 10px 30px;
 
 }
+
+/* colors */
+.grey {
+    color: gray;
+
+}
 /** XS Layout */
 
 @media screen and (min-width:576px) {
@@ -79,6 +85,9 @@ a {
     .upper-sidebar, .lower-sidebar {
         align-items: center;
     }
+    .track-info-container, .player-container, .volume-settings {
+        width: calc(100% / 3);
+    }
 }
 
 
@@ -95,13 +104,31 @@ a {
         display: none;
     }
     .s, .mg, .lg {
-        display: inline;
+        display: block;
     }
     .sidebar-container {
         align-items: flex-start;
     }
     .upper-sidebar, .lower-sidebar {
         align-items: flex-start;
+    }
+    .menu {
+        display: flex;
+        align-self: center;
+    }
+    .playlist {
+        padding-top: 20px;
+    }
+    .add-playlist {
+        gap: 10px;
+        display: flex;
+        align-items: center;
+    }
+    .playlist-name {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 20px;
     }
 }
 
@@ -168,7 +195,11 @@ header {
 .upper-sidebar, .lower-sidebar {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+}
+.profile {
+    background-color: gray;
+    border-radius: 50%;
 }
 
 
@@ -197,7 +228,7 @@ footer {
     flex-direction: column;
     gap: 5px;
     font-size: 20px;
-    padding: 0 20px;
+    padding: 0 5px;
 }
 .player-container {
     flex-direction: column;
@@ -227,6 +258,7 @@ footer {
     width: 130px;
 }
 .volume-settings {
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
@@ -234,5 +266,5 @@ footer {
     border-top: 5px solid #ccc;
     border-radius: 5px;
     height: 1px;
-    width: 100px;
+    width: 40%;
 }
