@@ -85,9 +85,10 @@ a {
     .upper-sidebar, .lower-sidebar {
         align-items: center;
     }
-    .track-info-container, .player-container, .volume-settings {
-        width: calc(100% / 3);
+    .install, .divider, .name {
+        display: none;
     }
+
 }
 
 
@@ -98,7 +99,7 @@ a {
         width: 720px;
     }
     #sidebar {
-        width: 200px;
+        width: 250px;
     }
     .xs {
         display: none;
@@ -111,6 +112,12 @@ a {
     }
     .upper-sidebar, .lower-sidebar {
         align-items: flex-start;
+    }
+    .lower-sidebar {
+        display: flex;
+    }
+    .install, .divider, .name {
+        display: inline-block;
     }
     .menu {
         display: flex;
@@ -137,6 +144,10 @@ a {
 @media screen and (min-width:992px) {
     .container {
         width: 960px;
+    }
+    .track-info-container > .liked {
+        flex-direction: row;
+        gap: 10px;
     }
 }
 
@@ -176,7 +187,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 80px;
+    bottom: 100px;
     background-color: black;
     color: white;
     overflow-y: auto;
@@ -197,9 +208,21 @@ header {
     flex-direction: column;
     gap: 20px;
 }
+.divider {
+    border-top: 1px solid grey;
+    width: 160%;
+}
+.download, .profile-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 .profile {
     background-color: gray;
     border-radius: 50%;
+}
+.name {
+    font-weight: bold;
 }
 
 
@@ -213,7 +236,7 @@ footer {
     right: 0;
     background-color: var(--grey);
     color: white;
-    height: 80px;
+    height: 100px;
     padding: 20px 10px;
 }
 .footer-container {
@@ -224,11 +247,17 @@ footer {
     gap: 15px;
     align-items: center;
 }
-.track-info-container .liked {
+.track-info-container, .player-container, .volume-settings {
+    width: calc(100% / 3);
+}
+.liked {
     flex-direction: column;
     gap: 5px;
     font-size: 20px;
     padding: 0 5px;
+}
+.track {
+    font-weight: bold;
 }
 .player-container {
     flex-direction: column;
@@ -251,11 +280,14 @@ footer {
     gap: 10px;
     align-items: center;
 }
+.player-timeline {
+    width: 100%;
+}
 .timeline {
     border-top: 5px solid #ccc;
     border-radius: 5px;
     height: 1px;
-    width: 130px;
+    width: 90%;
 }
 .volume-settings {
     justify-content: flex-end;
@@ -265,6 +297,5 @@ footer {
 .volume {
     border-top: 5px solid #ccc;
     border-radius: 5px;
-    height: 1px;
     width: 40%;
 }

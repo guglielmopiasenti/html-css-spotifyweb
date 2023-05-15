@@ -15,13 +15,13 @@
 
 
 
-<header>
-    <a class="white-btn" href="#">EFFETTUA L'UPGRADE</a>
-</header>
-
 
 <body>
-    <main>
+    
+    <main class="upper-content">
+        <header>
+            <a class="white-btn" href="#">EFFETTUA L'UPGRADE</a>
+        </header>
         <!-- Sidebar section -->
         <section id="sidebar">
             <div class="sidebar-container">
@@ -46,8 +46,15 @@
                     </div>
                 </div>
                 <div class="lower-sidebar">
-                    <img class="img-h-20" src="img/download.svg" alt="download">
-                    <img class="profile img-h-30" src="img/profile.svg" alt="profile">
+                    <div class="download grey">
+                        <img class="img-h-20" src="img/download.svg" alt="download"> 
+                        <span class="install"> Installa app</span>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="profile-info">
+                        <img class="profile img-h-30" src="img/profile.svg" alt="profile"> 
+                        <span class="name">Jhon Doe</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,11 +67,11 @@
             <div class="track-info-container flex">
                 <img class="img-h-40" src="img/sinister.jpeg" alt="">
                 <div class="track-info">
-                    <div>Sinister</div>
-                    <div>Brano</div>
-                    <div>Nome</div>
+                    <div class="track">Sinister</div>
+                    <div class="grey">Brano</div>
+                    <div class="grey">Nome</div>
                 </div>
-                <div class="liked flex">
+                <div class="liked flex grey">
                     <i class="fa-regular fa-heart"></i>
                     <i class="fa-regular fa-folder"></i>
                 </div>
