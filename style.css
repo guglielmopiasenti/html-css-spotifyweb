@@ -227,6 +227,7 @@ header {
     align-items: center;
     justify-content: flex-end;
     padding: 40px 20px;
+    z-index: 1;
 
 }
 
@@ -244,6 +245,7 @@ header {
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    z-index: 2;
 }
 .sidebar-container {
     width: 80%;
